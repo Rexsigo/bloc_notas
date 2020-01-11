@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActualizarNota"
+    android:orientation="vertical">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_Nombre"
+        android:layout_marginTop="3dp"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/edt_MultiLine"
+        style="@style/Base.TextAppearance.AppCompat.Large"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#fafafa"
+        android:enabled="true"
+        android:focusable="true"
+        android:gravity="top"
+        android:hint="Ingresa tus anotaciones aqui"
+        android:inputType="textMultiLine"
+        android:isScrollContainer="true"
+        android:lines="5"
+        android:maxLines="12"
+        android:minLines="12"
+        android:padding="24dp"
+        android:textIsSelectable="true"
+        android:textStyle="italic" />
+
+</LinearLayout>

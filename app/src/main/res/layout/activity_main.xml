@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imagendeprueba"
+        android:layout_gravity="center"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtCorreo"
+        android:hint="correo@algo.com"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="15dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="******"
+        android:id="@+id/edtContra"
+        android:inputType="textPassword"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="30dp"/>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Login"
+        android:onClick="Login"
+        android:layout_gravity="center_horizontal"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip"
+        />
+
+    <TextView android:id="@+id/tvRegistro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dip"
+        android:layout_marginBottom="40dip"
+        android:text="Registrarse"
+        android:gravity="center"
+        android:textSize="20dip"
+        android:textColor="#530d4c"
+        android:onClick="Registrarse"
+        />
+
+    <TextView android:id="@+id/tvEerror"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dip"
+        android:layout_marginBottom="40dip"
+        android:gravity="center"
+        android:textSize="20dip"
+        android:textColor="#dc1f0e"/>
+
+
+    
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lvUsuarios">
+
+    </ListView>
+
+</LinearLayout>
